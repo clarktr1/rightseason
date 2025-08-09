@@ -75,10 +75,15 @@ export default function Home() {
       {/* About Section */}
      <section className="py-30 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2  initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}><h2 className="text-4xl font-bold text-amber-900 mb-6">About the Chef</h2></motion.h2>
+          <motion.h2
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold text-amber-900 mb-6"
+          >
+            About the Chef
+          </motion.h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text content */}
             <motion.div
