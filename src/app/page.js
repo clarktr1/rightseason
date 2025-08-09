@@ -73,18 +73,24 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-30 bg-white">
+     <section className="py-30 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.h2  initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}><h2 className="text-4xl font-bold text-amber-900 mb-6">About the Chef</h2></motion.h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Text content */}
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="order-2 lg:order-1"
             >
-              <h2 className="text-4xl font-bold text-amber-900 mb-6">About the Chef</h2>
+
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-               <strong>Dontray Clark </strong>is a seasoned chef and proud Navy veteran hailing from Radcliff, KY. His life experiences has taken him across the globe, where he has immersed himself in diverse cultures and savored an array of exquisite dishes.
+                <strong>Dontray Clark </strong>is a seasoned chef and proud Navy veteran hailing from Radcliff, KY. His life experiences has taken him across the globe, where he has immersed himself in diverse cultures and savored an array of exquisite dishes.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Throughout his career, Dontray has brought this wealth of knowledge and creativity to numerous esteemed establishments across Hardin County. His expertise spans bustling commercial kitchens, acclaimed restaurants, and exclusive private events—each setting benefiting from his unwavering commitment to culinary excellence and innovative cuisine.
@@ -116,17 +122,18 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            
+
+            {/* Image content */}
             <motion.div
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative order-1 lg:order-2"
             >
-              <img 
-                src="/assets/dontray.jpg" 
-                alt="Fresh ingredients" 
+              <img
+                src="/assets/dontray.jpg"
+                alt="Fresh ingredients"
                 className="rounded-2xl shadow-2xl w-full"
               />
               <div className="absolute -bottom-6 -right-6 bg-amber-500 text-white p-6 rounded-2xl shadow-xl">
