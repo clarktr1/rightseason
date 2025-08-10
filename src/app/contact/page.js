@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'The Right Season Mobile Kitchen - Contact',
+  title: 'Contact',
   description:
     'Have a question, want to book our mobile kitchen, or just say hello? We’d love to hear from you!',
   openGraph: {
