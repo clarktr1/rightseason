@@ -1,5 +1,6 @@
 'use client'
 
+import { SocialIcon } from 'react-social-icons'
 import {motion} from 'framer-motion'
 
 const Footer = () => {
@@ -20,14 +21,10 @@ const Footer = () => {
                   className="h-12 w-12"
                 />
                 <div>
-                  <h3 className="text-xl font-bold">The Right Seasons</h3>
+                  <h3 className="text-xl font-bold">The Right Season</h3>
                   <p className="text-amber-200">Mobile Kitchen</p>
                 </div>
               </div>
-              <p className="text-amber-200 leading-relaxed">
-                Fresh, seasonal ingredients crafted into unforgettable meals. 
-                Find us around town serving up culinary excellence on wheels.
-              </p>
             </div>
             
             <div>
@@ -44,15 +41,15 @@ const Footer = () => {
               <p className="text-amber-200 mb-4">
                 Stay updated on our locations and daily specials!
               </p>
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-amber-800 rounded-full flex items-center justify-center">
-                  <span className="text-sm">📘</span>
+              <div className="flex gap-6">
+                <div className="w-10 h-10">
+                  <SocialIcon url='https://facebook.com' />
                 </div>
-                <div className="w-10 h-10 bg-amber-800 rounded-full flex items-center justify-center">
-                  <span className="text-sm">📷</span>
+                <div className="w-10 h-10">
+                  <SocialIcon url='https://instagram.com' />
                 </div>
-                <div className="w-10 h-10 bg-amber-800 rounded-full flex items-center justify-center">
-                  <span className="text-sm">🐦</span>
+                <div className="w-10 h-10">
+                  <SocialIcon url='https://tiktok.com' />
                 </div>
               </div>
             </div>

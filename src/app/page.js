@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react";
 import Link from 'next/link';
-import { MapPin, Clock, Calendar, Star, ChefHat, Truck } from "lucide-react";
+import { MapPin, Mail, Star, ChefHat, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -146,6 +146,26 @@ export default function Home() {
                 <p className="text-amber-100">Serving Excellence</p>
               </div>
             </motion.div>
+          </div>
+         
+        </div>
+      </section>
+      <section className="bg-amber-50 py-24">
+        <div className=" mx-auto max-w-3xl text-center bg-white rounded-3xl p-12 shadow-xl">
+          <h2 className="text-3xl sm:text-4xl font-bold text-amber-900 mb-4">
+            Want Us at Your Event?
+          </h2>
+          <p className="text-lg text-gray-700 mb-8">
+            We'd love to bring our mobile kitchen to you! Contact us to discuss catering options for your next gathering.
+          </p>
+          <div className="container-md flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a 
+              href="/contact" 
+              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              Contact Us
+            </a>
           </div>
         </div>
       </section>
