@@ -1,3 +1,22 @@
+export const metadata = {
+  title: 'The Right Season Mobile Kitchen - Contact',
+  description:
+    'Have a question, want to book our mobile kitchen, or just say hello? We’d love to hear from you!',
+  openGraph: {
+    title: 'The Right Season Mobile Kitchen - Contact',
+    description:
+      'Have a question, want to book our mobile kitchen, or just say hello? We’d love to hear from you!',    
+      images: [
+      {
+        url: '/assets/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Right Season Mobile Kitchen'
+      }
+    ],
+  },
+}
+
 export default function ContactPage() {
   return (
     <section className="bg-amber-50 py-16">

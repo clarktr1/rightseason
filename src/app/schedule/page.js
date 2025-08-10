@@ -15,6 +15,25 @@ const upcomingEvents = [
   // Add more events here
 ];
 
+export const metadata = {
+  title: 'The Right Season Mobile Kitchen - Schedule',
+  description:
+    'See where we are so you can get a taste of our delicious food!',
+  openGraph: {
+    title: 'The Right Season Mobile Kitchen - Schedule',
+    description:
+    'See where we are so you can get a taste of our delicious food!',
+      images: [
+      {
+        url: '/assets/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Right Season Mobile Kitchen'
+      }
+    ],
+  },
+}
+
 export default function SchedulePage() {
   return (
     <>
